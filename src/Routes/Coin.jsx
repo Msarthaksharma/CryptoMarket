@@ -51,6 +51,7 @@ const Coin = () => {
         </div>
         <div className='p-5'>
               <h3>About</h3>
+               {/* to remove html tags */}
               <p dangerouslySetInnerHTML={{
                   __html: DOMPurify.sanitize(coin.description ? coin.description.en : ''),
               }}>
